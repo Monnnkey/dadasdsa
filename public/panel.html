@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Załóż konto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Załóż konto</h1>
+    <p class="subtitle">Podaj login i hasło.</p>
+
+    <form class="signup">
+      <div class="field">
+        <label>
+          Login
+          <input class="login" type="text" name="login" autocomplete="username"
+                 placeholder="Twój login" required minlength="3">
+        </label>
+      </div>
+
+      <div class="field">
+        <label>
+          Hasło
+          <div class="pw-wrap">
+            <input class="password" type="password" name="password" autocomplete="new-password"
+                   placeholder="Twoje hasło" required minlength="6">
+            <button type="button" class="toggle">Pokaż</button>
+          </div>
+        </label>
+      </div>
+
+      <button type="submit" class="submit">Utwórz konto</button>
+      <div class="success">Konto zostało utworzone!</div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

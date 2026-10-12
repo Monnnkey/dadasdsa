@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista zadań</title>
+  <link rel="stylesheet" href="todoCss.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Lista zadań</h1>
+
+
+    <div class="notice guest" hidden>
+      <a href="login.html">Zaloguj się</a> lub <a href="panel.html">zarejestruj</a>, aby dodawać zadania.
+    </div>
+    <div class="notice user" hidden>
+      Zalogowano jako <strong class="username"></strong>
+      <button type="button" class="logout">Wyloguj</button>
+    </div>
+
+    <form class="add">
+      <input class="input" type="text" placeholder="Nowe zadanie" required disabled>
+      <button type="submit" disabled>Dodaj</button>
+    </form>
+
+    <ul class="list"></ul>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
